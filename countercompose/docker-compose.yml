@@ -6,3 +6,8 @@ services:
     build: .
     ports:
       - "4001:8081"
+  nginx-rev:
+    image: 'nginx:mod'
+    ports:
+      - "8080:8080"
+
