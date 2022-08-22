@@ -3,11 +3,12 @@ services:
   redis-server: 
     image: 'redis'
   node-app:
+    image: 'node-app'     
     build: .
     ports:
       - "4001:8081"
   nginx-rev:
-    image: 'nginx:mod'
-    ports:
-      - "80:80"
+         image: 'nginx:mod'
+         ports:
+          - "80:80"
 
